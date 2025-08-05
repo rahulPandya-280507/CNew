@@ -13,5 +13,5 @@ int main(){
         A7 = 105*74
         A8 = 74*52
     */
-   //these are the results. Now you just need to print them. As of now, loops aren't taught, but this can be solved usinf loops and conditional statements.
+   //these are the results. Now you just need to print them. As of now, loops aren't taught, but this can be solved usinf loops and conditional statements. Now, just print these values
 }
