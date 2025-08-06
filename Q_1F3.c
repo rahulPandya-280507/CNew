@@ -14,4 +14,18 @@ int main(){
         A8 = 74*52
     */
    //these are the results. Now you just need to print them. As of now, loops aren't taught, but this can be solved usinf loops and conditional statements. Now, just print these values
+
+   //this is the actual logical code, ig
+   int Al[8], Ab[8];
+   Al[0]=1189;
+   Ab[0]=841;
+   for (int i=1; i<8; i++){
+    if(Al[i-1]>Ab[i-1]){
+        Ab[i] = Al[i-1]/2;
+        Al[i] = Ab[i-1];
+    }
+   }
+   for(int i=0; i<8; i++){
+    printf("A%d : %d x %d\n", i, Al[i], Ab[i]);
+   }
 }
