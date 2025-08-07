@@ -4,7 +4,7 @@ int main(){
     //this is a simple problem, but you need to know the results
     /*
         A0 = 1189*841
-        A1 = 841*594
+        A1 = 841*594`
         A2 = 594*420
         A3 = 420*297
         A4 = 297*210
