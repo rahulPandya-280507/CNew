@@ -1,7 +1,8 @@
 /*Write a C program to perform size of operations*/
 
 #include <stdio.h>
-int main(){
+int main()
+{
     int i;
     char a;
     float b;

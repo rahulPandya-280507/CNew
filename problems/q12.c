@@ -1,0 +1,1 @@
+/*Write a C program to check if a person's age is greater than or equal to 18 (eligible to vote) only using if statement.*/
