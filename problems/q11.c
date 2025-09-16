@@ -14,3 +14,10 @@ int main()
     printf("The size of a double in C is: %d bytes\n", sizeof(c));
     return 0;
 }
+
+/*
+The size of an integer in C is: 4 bytes
+The size of a character in C is: 1 bytes
+The size of a float in C is: 4 bytes
+The size of a double in C is: 8 bytes
+*/

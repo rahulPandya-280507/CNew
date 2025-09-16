@@ -11,3 +11,8 @@ int main()
         printf("You are eligible to vote!");
     return 0;
 }
+
+/*
+Enter your age: 24
+You are eligible to vote!
+*/

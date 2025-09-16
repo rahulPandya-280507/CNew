@@ -9,3 +9,8 @@ int main()
     printf("The area of the circle of radius %.2f units is: %.2f sq. units", rad, area);
     return 0;
 }
+
+/*
+Enter the radius of the circle you want to find the area of: 25
+The area of the circle of radius 25.00 units is: 1962.50 sq. units
+*/

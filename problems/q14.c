@@ -33,3 +33,8 @@ int main()
         }
     }
 }
+
+/*
+Enter your marks: 69
+FIRST CLASS
+*/

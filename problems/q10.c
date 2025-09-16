@@ -19,3 +19,11 @@ int main() {
 
     return 0;
 }
+
+/*
+Enter two integers: 2 3
+(2 && 3) = 1
+(2 || 3) = 1
+!(2) = 0
+!(3) = 0
+*/

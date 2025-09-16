@@ -17,3 +17,8 @@ int main()
     }
     return 0;
 }
+
+/*
+The odd numbers from 1 to 20 are:
+1 3 5 7 9 11 13 15 17 19 
+*/

@@ -19,3 +19,13 @@ int main()
     printf("The remainder of %.2f and %.2f is: %.2f%%\n", c,d, percentage);
     return 0;
 }
+
+/*
+Enter two numbers: 2 3
+Enter two decimal numbers: 5.6 2.3
+The difference of 2 and 3 is: -1
+The product of 2 and 3 is: 6
+The quotient of 2 and 3 is: 0
+The remainder of 2 and 3 is: 2
+The remainder of 5.60 and 2.30 is: 243.48%
+*/

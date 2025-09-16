@@ -16,3 +16,9 @@ int main()
     printf("Original Number: %d\n", temp);
     printf("Reversed Number: %d\n", rev);
 }
+
+/*
+Enter a number: 123
+Original Number: 123
+Reversed Number: 321
+*/

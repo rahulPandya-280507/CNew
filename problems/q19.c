@@ -12,3 +12,8 @@ int main()
     }
     printf("The factorial of %d is: %d", n, pro);
 }
+
+/*
+Enter the number you want to find the factorial of: 5
+The factorial of 5 is: 120
+*/

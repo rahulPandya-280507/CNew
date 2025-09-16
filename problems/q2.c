@@ -8,3 +8,8 @@ int main()
     printf("%d", c);
     return 0;
 }
+
+/*
+Enter two numbers: 2 3 
+5
+*/

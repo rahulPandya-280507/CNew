@@ -62,3 +62,20 @@ int main() {
 
     return 0;
 }
+
+
+/*
+Initial values: a = 10, b = 5
+
+a = b  -> a = 5
+a += b -> a = 15
+a -= b -> a = 10
+a *= b -> a = 50
+a /= b -> a = 10
+a %= b -> a = 0
+a &= b -> a = 0
+a |= b -> a = 15
+a ^= b -> a = 15
+a <<= b -> a = 20
+a >>= b -> a = 5
+*/

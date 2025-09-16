@@ -12,3 +12,8 @@ int main()
     }
     printf("%d is the sum of first %d natural numbers!", sum, n);
 }
+
+/*
+Enter your limit: 3
+6 is the sum of first 3 natural numbers!
+*/

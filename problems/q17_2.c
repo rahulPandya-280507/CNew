@@ -58,3 +58,8 @@ int main()
         printf("please recheck");
     }
 }
+
+/*
+Which month of the year do you want?: 12
+December
+*/

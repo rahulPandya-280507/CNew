@@ -12,3 +12,7 @@ int main()
     }
     return 0;
 }
+
+/*
+25 is an odd number
+*/

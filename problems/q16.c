@@ -32,3 +32,8 @@ int main()
         break;
     }
 }
+
+/*
+Which day of the week do you want?: 2
+Tuesday
+*/

@@ -12,3 +12,8 @@ int main()
     }
     return 0;
 }
+
+/*
+Enter two integers: 3 2
+3 is greater than 2
+*/

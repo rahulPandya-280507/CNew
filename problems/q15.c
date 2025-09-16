@@ -26,3 +26,8 @@ int main()
         printf("please recheck!");
     }
 }
+
+/*
+Enter your percentage: 25
+FAIL
+*/
