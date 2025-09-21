@@ -4,7 +4,7 @@ int main() {
     int rows, columns;
     printf("Enter the number of rows and columns of the matrix: ");
     scanf("%d %d", &rows, &columns);
-    printf("The order of the matrix is: %d\n", rows*columns);
+    printf("The order of the matrix is: %dx%d\n", rows,columns);
 
     //declaring and taking input of matrix
     int arr[rows][columns];
