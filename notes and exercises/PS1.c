@@ -38,5 +38,17 @@ int main() {
     temp_f = ((9/5)*temp_c) + 32;
     printf("The temperature in farenheit is: %.2f F", temp_f);
     */
+
+    //Q4] write a program to calculate the simple interest for a set of values representing principal amount, no. of years and rate of interest.
+    /*
+    float principal_amount, rate;
+    int no_years;
+    printf("Enter the principal amount, the rate of interest and the number of years for the loan: ");
+    scanf("%f %f %d", &principal_amount, &rate, &no_years);
+    float simple_interest;
+    simple_interest = (principal_amount*rate*no_years)/100;
+    printf("The simple interest is: %.2f", simple_interest);
+    */
+    return 0;
 }
     
