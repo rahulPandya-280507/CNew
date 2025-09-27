@@ -17,13 +17,11 @@
 
     #include <stdio.h>
     int main() {
-        int rows, columns;
+        int rows;
         printf("Enter the number of times you want the row to repeat: ");
         scanf("%d", &rows);
-        printf("Enter the number till what number do you want to print the numbers: ");
-        scanf("%d", &columns);
         for(int i=0; i<rows; i++) {
-            for (int j=0; j<columns; j++) {
+            for (int j=0; j<rows; j++) {
                 printf("%d ", j+1);
             }
             printf("\n");
