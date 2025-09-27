@@ -41,6 +41,7 @@ int main()
 */
 
 //same program for alphabets
+/*
 #include <stdio.h>
 int main()
 {
@@ -56,3 +57,4 @@ int main()
         printf("\n");
     }
 }
+*/
