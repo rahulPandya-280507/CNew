@@ -39,3 +39,20 @@ int main()
     }
 }
 */
+
+//same program for alphabets
+#include <stdio.h>
+int main()
+{
+    int rows;
+    printf("Enter the number of times you want the row to repeat: ");
+    scanf("%d", &rows);
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < rows; j++)
+        {
+            printf("%c ", 'A' + j);
+        }
+        printf("\n");
+    }
+}
