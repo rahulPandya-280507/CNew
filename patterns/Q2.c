@@ -3,6 +3,7 @@
     4 5 6
     7 8 9
 */
+/*
 #include <stdio.h>
 int main() {
     int rows;
@@ -17,3 +18,4 @@ int main() {
         printf("\n");
     }
 }
+*/
