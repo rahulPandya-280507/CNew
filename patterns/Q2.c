@@ -130,3 +130,25 @@ int main() {
     }
 }
 */
+
+/*
+    A
+    B C
+    D E F  
+    G H I J
+*/
+/*
+#include <stdio.h>
+int main() {
+    int n, count = 0;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+    for(int i=0; i<n; i++) {
+        for (int j=0; j<i+1; j++) {
+            printf("%c ", 'A' + count);
+            count ++;
+        }
+        printf("\n");
+    }
+}
+*/
