@@ -6,10 +6,3 @@ int raise (int x, int y) {
     }
     return pro;
 }
-int main() {
-    int n, m;
-    printf("Enter the base and exponent: ");
-    scanf("%d %d", &n, &m);
-    int res = raise(n,m);
-    printf("%d", res);
-}
