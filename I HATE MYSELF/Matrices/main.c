@@ -3,5 +3,6 @@
 
 int main() {
     // add();
-    sub();
+    // sub();
+    mat_multiply();
 }

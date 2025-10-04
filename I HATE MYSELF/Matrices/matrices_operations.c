@@ -78,3 +78,45 @@ int sub() {
     }
 }
 
+int mat_multiply() {
+    //this is only for 2 matrices
+    int r1,cols,r2;
+    printf("Enter the dimensions of the first array (row,column): ");
+    scanf("%d %d", r1, cols);
+    printf("Enter the number of columns")
+    //enter array
+    int mat1[r1][cols], mat2[cols][r2];
+    printf("\nEnter matrix 01: \n");
+    for(int i = 0; i<r1; i++) {
+        for(int j=0; j<cols; j++) {
+            scanf("%d", &mat1[i][j]);
+        }
+    }
+    printf("\nEnter matixr 02: \n");
+    for(int i = 0; i<r1; i++) {
+        for(int j=0; j<cols; j++) {
+            scanf("%d", &mat2[i][j]);
+        }
+    }
+    int res[r1][r2];
+    for(int i=0; i<r1; i++){
+        for(int j = 0; j<r2; j++) {
+            res[i][j] = 0;
+        }
+    }
+    //multiplying part
+    for(int i=0; i<r1; i++) {
+        for(int j=0; j<cols; j++) {
+            for (int k=0; k<r2; k++){
+                res[i][j] = mat1[i][j]*mat2[j][k] + res[i][j];
+            }
+        }
+    }
+    //print result
+    for(int i=0; i<r1; i++){
+        for(int j=0; j<r2; j++) {
+            printf("%d ", res[i][j]);
+        }
+        printf("\n");
+    }
+}
