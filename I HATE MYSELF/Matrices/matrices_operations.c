@@ -78,43 +78,51 @@ int sub() {
     }
 }
 
-int mat_multiply() {
-    //this is only for 2 matrices
-    int r1,cols,r2;
-    printf("Enter the dimensions of the first array (row,column): ");
-    scanf("%d %d", r1, cols);
-    printf("Enter the number of columns")
-    //enter array
-    int mat1[r1][cols], mat2[cols][r2];
-    printf("\nEnter matrix 01: \n");
-    for(int i = 0; i<r1; i++) {
-        for(int j=0; j<cols; j++) {
-            scanf("%d", &mat1[i][j]);
+int mult() {
+    int r1, c1, c2;
+
+    printf("Enter the dimensions of the first matrix (rows cols): ");
+    scanf("%d %d", &r1, &c1);
+
+    int A[r1][c1];
+    printf("Enter the first matrix (A): \n");
+    for(int i=0; i<r1; i++) {
+        for(int j=0; j<c1; j++) {
+            scanf("%d", &A[i][j]);
         }
     }
-    printf("\nEnter matixr 02: \n");
-    for(int i = 0; i<r1; i++) {
-        for(int j=0; j<cols; j++) {
-            scanf("%d", &mat2[i][j]);
+
+    printf("Enter the number of columns of the second matrix: ");
+    scanf("%d", &c2);
+
+    int B[c1][c2];
+    printf("Enter the second matrix (B): \n");
+    for(int i=0; i<c1; i++) {   // ✅ corrected
+        for(int j=0; j<c2; j++) {
+            scanf("%d", &B[i][j]);
         }
     }
-    int res[r1][r2];
-    for(int i=0; i<r1; i++){
-        for(int j = 0; j<r2; j++) {
+
+    int res[r1][c2];
+    // initialize result matrix
+    for(int i=0; i<r1; i++) {
+        for(int j=0; j<c2; j++) {
             res[i][j] = 0;
         }
     }
-    //multiplying part
+
+    // ✅ multiply A × B
     for(int i=0; i<r1; i++) {
-        for(int j=0; j<cols; j++) {
-            for (int k=0; k<r2; k++){
-                res[i][j] = mat1[i][j]*mat2[j][k] + res[i][j];
+        for(int j=0; j<c2; j++) {
+            for(int k=0; k<c1; k++) {
+                res[i][j] += A[i][k] * B[k][j];
             }
         }
     }
-    //print result
-    for(int i=0; i<r1; i++){
-        for(int j=0; j<r2; j++) {
+
+    printf("The resultant matrix is:\n");
+    for(int i=0; i<r1; i++) {
+        for(int j=0; j<c2; j++) {
             printf("%d ", res[i][j]);
         }
         printf("\n");

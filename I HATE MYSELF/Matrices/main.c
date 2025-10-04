@@ -4,5 +4,5 @@
 int main() {
     // add();
     // sub();
-    mat_multiply();
+    mult();
 }
