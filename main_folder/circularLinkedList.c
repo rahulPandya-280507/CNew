@@ -6,12 +6,16 @@ struct Node {
     struct Node* next;
 };
 
-struct Node* traversal(struct Node* head);
+void traversal(struct Node* head);
 int search(struct Node* head, int value);
 struct Node* insertAtBeginning(struct Node* head, int data);
 struct Node* insertAtEnd(struct Node* head, int data);
 struct Node* insertAtIndex(struct Node* head, int data, int index);
 struct Node* insertAfterNode(struct Node* head, int data, struct Node* prevNode);
+struct Node* deleteFirstNode(struct Node* head);
+struct Node* deleteEndNode(struct Node* head);
+struct Node* deleteNodeAtIndex(struct Node* head, int index);
+struct Node* deleteGivenValue(struct Node* head, int value);
 
 int main() {
     struct Node* head = (struct Node*) malloc(sizeof(struct Node));
@@ -65,10 +69,35 @@ int main() {
     struct Node* newHead = insertAfterNode(head, 30, second);
     traversal(newHead);
     */
+
+    //deletes first node
+    /*
+    struct Node* newHead = deleteFirstNode(head);
+    traversal(newHead);
+    */
+
+    //deletes the last node
+    /*
+    struct Node* newHead = deleteEndNode(head);
+    traversal(newHead);
+    */
+
+    //deletes the node from a particular index
+    /*
+    struct Node* newHead = deleteNodeAtIndex(head, 2);
+    traversal(newHead);
+    */
+
+
+    //deletes a given value
+    /*
+    struct Node* newHead = deleteGivenValue(head, 100);
+    traversal(newHead);
+    */
     return 0;
 }
 
-struct Node* traversal(struct Node* head) {
+void traversal(struct Node* head) {
     struct Node* p = head;
     do {
         printf("element: %d\n", p->data);
@@ -134,4 +163,52 @@ struct Node* insertAfterNode(struct Node* head, int data, struct Node* prevNode)
     p->next = prevNode->next;
     prevNode->next = p;
     return head;
+}
+
+struct Node* deleteFirstNode(struct Node* head){
+    struct Node* p = head;
+    struct Node* q = head;
+    while(q->next!=head){
+        q = q->next;
+    }
+    head = head->next;
+    q->next = head;
+    free(p);
+    return head;
+}
+
+struct Node* deleteEndNode(struct Node* head){
+    struct Node* p = head;
+    struct Node* q = p->next;
+    while(q->next!=head){
+        p = p->next;
+        q = q->next;
+    }
+    p->next = head;
+    free(q);
+    return head;
+}
+
+struct Node* deleteNodeAtIndex(struct Node* head, int index){
+    struct Node* p = head;
+    struct Node* q = p->next;
+    int i=0;
+    while(i<index-1){
+        p = p->next;
+        q = q->next;
+        i++;
+    }
+    p->next = q->next;
+    free(q);
+    return head;
+}
+
+struct Node* deleteGivenValue(struct Node* head, int value){
+    int index = search(head, value);
+    if(index!=-1){
+        struct Node* newHead = deleteNodeAtIndex(head, index);
+        return newHead;
+    } else {
+        printf("Value not found!");
+    }
 }
