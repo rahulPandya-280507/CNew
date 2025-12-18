@@ -11,6 +11,7 @@ struct Node {
     struct Node* next;
 };
 
+int search(struct Node* head, int value);
 void linkedListTraversal(struct Node* ptr);
 struct Node* insBeg(struct Node* head, int data);
 struct Node* insIndex(struct Node* head, int data, int index);
@@ -45,8 +46,11 @@ int main() {
     fourth->data = 10;
     fourth->next=NULL;
 
-    printf("BEFORE DELETION:\n");
-    linkedListTraversal(head);
+    int key = search(head, 10);
+    (key!=-1)?printf("Value found at: %d", key):printf("Value not found");
+
+    // printf("BEFORE DELETION:\n");
+    // linkedListTraversal(head);
 
 
     //insertion code!!!!
@@ -65,11 +69,11 @@ int main() {
     // struct Node* delFirstHead = delFirst(head);  //deletes first node of LL
     // struct Node* delIndexHead = delBet(head, 2); //deletes the node at a given index.
     // struct Node* delEndHead = delEnd(head);  //deletes the last node of a given LL
-    struct Node* delGVHead = delGivenValue(head, 100);
+    // struct Node* delGVHead = delGivenValue(head, 100);
 
 
-    printf("AFTER DELETION:\n");
-    linkedListTraversal(delGVHead);
+    // printf("AFTER DELETION:\n");
+    // linkedListTraversal(delGVHead);
     return 0;
 }
 
@@ -175,4 +179,17 @@ struct Node* delGivenValue(struct Node* head, int value) {
     q->next = p->next;
     free(p);
     return head;
+}
+
+int search(struct Node* head, int value){
+    struct Node* p = head;
+    int count = 0;
+    do{
+        if(p->data == value){
+            return count;
+        }
+        p = p->next;
+        count++;
+    } while(p!=NULL);
+    return -1;
 }
