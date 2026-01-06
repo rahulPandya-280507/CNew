@@ -8,7 +8,7 @@ int isFull(struct Stack *s) {
     return s->top == s->size - 1;
 }
 
-void push(int value, struct Stack *s) {
+void push(char value, struct Stack *s) {
     if (isFull(s)) {
         printf("Stack Overflow\n");
     } else {
@@ -16,7 +16,7 @@ void push(int value, struct Stack *s) {
     }
 }
 
-int pop(struct Stack *s) {
+char pop(struct Stack *s) {
     if (isEmpty(s)) {
         printf("Stack Underflow\n");
         return -1;

@@ -13,8 +13,8 @@ struct Stack {
 /* Function declarations */
 int isEmpty(struct Stack *s);
 int isFull(struct Stack *s);
-void push(int value, struct Stack *s);
-int pop(struct Stack *s);
+void push(char value, struct Stack *s);
+char pop(struct Stack *s);
 int peek(struct Stack *s, int index);
 int stackTop(struct Stack *s);
 int stackBottom(struct Stack *s);
