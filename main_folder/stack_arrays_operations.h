@@ -7,7 +7,7 @@
 struct Stack {
     int top;
     int size;
-    int *arr;
+    char *arr;
 };
 
 /* Function declarations */
