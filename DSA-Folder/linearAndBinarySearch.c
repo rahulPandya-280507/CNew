@@ -14,7 +14,7 @@ int main()
     int n;
     printf("Enter the size of the array: ");
     scanf("%d", &n);
-    int arr[n];
+    int arr[50];
     printf("Enter the elements of the array in ascending order: ");
     for (int i = 0; i < n; i++)
     {
