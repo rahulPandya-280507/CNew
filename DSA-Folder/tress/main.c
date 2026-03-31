@@ -10,6 +10,7 @@ struct Node {
 struct Node* createNode(int data);
 
 int main() {
+    /*
     struct Node *p;
     p = (struct Node *)malloc(sizeof(struct Node));
     p->left = NULL;
@@ -25,6 +26,13 @@ int main() {
     p->left = p1;
     p->right = p2;
     return 0;
+    */
+    // constructing new node using function
+    struct Node *p = createNode(2);
+    struct Node *p1 = createNode(1);
+    struct Node *p2 = createNode(4);
+    p->left = p1;
+    p->right = p2;
 }
 
 struct Node* createNode(int data) {
@@ -33,4 +41,5 @@ struct Node* createNode(int data) {
     n->data = data;
     n->left = NULL;
     n->right = NULL;
+    return n;
 }
